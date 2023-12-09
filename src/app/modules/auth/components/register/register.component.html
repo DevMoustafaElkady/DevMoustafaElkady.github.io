@@ -1,0 +1,85 @@
+<app-breadcrumbs [crumbsConfig]="crumbsConfig"></app-breadcrumbs>
+<div class="register-container">
+  <div class="container">
+    <div class="content">
+      <div class="register">
+        <form>
+          <div class="input-group">
+            <label for="name">
+              Name
+              <input
+                class="form-control form-control"
+                name="name"
+                type="text"
+                placeholder=""
+              />
+            </label>
+          </div>
+          <div class="input-group">
+            <label for="email">
+              Email
+              <input
+                class="form-control form-control"
+                name="email"
+                type="text"
+                placeholder=""
+              />
+            </label>
+          </div>
+          <div class="input-group">
+            <label for="phoneNumber">
+              Phone Number
+              <input
+                class="form-control form-control"
+                name="phoneNumber"
+                type="text"
+                placeholder=""
+              />
+            </label>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="input-group">
+                <label for="password">
+                  Password
+                  <input
+                    class="form-control form-control"
+                    type="text"
+                    name="password"
+                    placeholder=""
+                  />
+                </label>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="input-group">
+                <label for="password">
+                  Confirm Password
+                  <input
+                    class="form-control form-control"
+                    type="text"
+                    name="password"
+                    placeholder=""
+                  />
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-actions">
+                <button type="submit" class="register">
+                  <fa-icon [icon]="register"></fa-icon>Register
+                </button>
+                <span routerLink="/auth/login">Already have an account?</span>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-loader *ngIf="loader"></app-loader>

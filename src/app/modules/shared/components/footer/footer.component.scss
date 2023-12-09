@@ -1,0 +1,62 @@
+@import '../../../shared/styles/variables';
+.footer-container {
+  background-color: $secondColor;
+  padding: 40px 0;
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .logo {
+      text-align: center;
+      img {
+        width: 150px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: $whiteColor;
+        font-size: 20px;
+      }
+    }
+
+    // Icons
+    .icons {
+      display: flex;
+      fa-icon {
+        color: $whiteColor;
+        margin: 0px 10px;
+        border: 1px solid;
+        height: 45px;
+        width: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.3s;
+        font-size: 20px;
+
+        &:hover {
+          background-color: $mainColor;
+          border: 1px solid $mainColor;
+          color: $secondColor;
+        }
+      }
+    }
+
+    .copyright {
+      color: #fff;
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        color: $mainColor;
+        font-weight: 500;
+      }
+    }
+  }
+}

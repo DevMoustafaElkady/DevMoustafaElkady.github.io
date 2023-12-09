@@ -1,0 +1,21 @@
+<div class="crumbs">
+  <div class="container">
+    <div class="content">
+      <div class="title">
+        <h2>{{ crumbsConfig.title }}</h2>
+      </div>
+      <div class="crumbs-list">
+        <ul>
+          <li *ngFor="let crumb of crumbsConfig.list; let i = index">
+            <a
+              [ngClass]="{ 'non-active': !crumb.active }"
+              [routerLink]="crumb.url"
+              >{{ crumb.label }}</a
+            >
+            <span *ngIf="i != crumbsConfig.list.length - 1">/</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

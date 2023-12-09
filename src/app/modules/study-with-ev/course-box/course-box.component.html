@@ -1,0 +1,61 @@
+<div class="container">
+  <div class="box-container">
+    <div class="box-content">
+      <div class="row">
+        <div class="col-md-4 course-head">
+          <span class="type">Course</span>
+          <h2>Start in English</h2>
+        </div>
+        <div class="col-md-8 course-details">
+          <span class="age">Age: 10 - 23</span>
+          <h3>level 3</h3>
+          <button (click)="onToggleDetails()">
+            Course Details
+            <fa-icon *ngIf="!toggleDetails" [icon]="bottom"></fa-icon>
+            <fa-icon *ngIf="toggleDetails" [icon]="up"></fa-icon>
+          </button>
+        </div>
+        <div *ngIf="toggleDetails" class="extra-details">
+          <div class="container">
+            <h4>Full Course Details</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+              impedit omnis aliquid odit sit blanditiis, repudiandae aperiam
+              voluptates deleniti! Veniam facere eaque optio facilis mollitia
+              omnis saepe assumenda? Quod, ducimus.
+            </p>
+            <ul>
+              <li>
+                <fa-icon [icon]="price"></fa-icon>
+                <span>200 EGP</span>
+              </li>
+              <li>
+                <fa-icon [icon]="time"></fa-icon>
+                <span>12 Hours</span>
+              </li>
+            </ul>
+
+            <div class="actions">
+              <button routerLink="/contact">
+                <fa-icon [icon]="email"></fa-icon>Apply Now
+              </button>
+              <button>
+                <a
+                  href="https://api.whatsapp.com/send?phone=01019499593&text=Hello I`m From website"
+                  class="float"
+                  target="_blank"
+                >
+                  <fa-icon [icon]="whatsapp"></fa-icon>
+                  Chat With Us</a
+                >
+              </button>
+              <button routerLink="/placementtest">
+                <fa-icon [icon]="book"></fa-icon>Start Placement Test
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

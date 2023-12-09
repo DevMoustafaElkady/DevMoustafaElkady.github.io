@@ -1,0 +1,120 @@
+@import '../../shared/styles/variables';
+.box-container {
+  margin: 40px 0;
+  background-color: $whiteColor;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 6px 5px 19px 1px rgba(0, 0, 0, 0.2);
+  .box-content {
+    .course-head {
+      background-color: $mainColor;
+      padding: 30px 30px;
+      box-shadow: 2px 0px 19px 0px rgba(0, 0, 0, 0.2);
+
+      .type {
+        margin-bottom: 30px;
+        display: block;
+        color: $paragraphColor;
+      }
+
+      h2 {
+        font-weight: bold;
+      }
+    }
+
+    .course-details {
+      padding: 15px 27px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      border-bottom: 1px solid $paragraphColor;
+
+      .age {
+        color: $paragraphColor;
+      }
+
+      h3 {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      button {
+        padding: 10px;
+        border: none;
+        border-radius: 8px;
+        transition: all 0.2s;
+        font-weight: bold;
+
+        &:hover {
+          background-color: $mainColor;
+        }
+      }
+    }
+
+    .extra-details {
+      padding: 55px 20px 20px 20px;
+
+      h4 {
+        font-weight: bold;
+        font-size: 20px;
+      }
+      p {
+        color: $paragraphColor;
+        font-size: 15px;
+        padding: 0 10px;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0 10px;
+
+        li {
+          margin-bottom: 15px;
+
+          fa-icon {
+            color: $mainColor;
+          }
+
+          span {
+            font-weight: bold;
+            margin: 0 10px;
+          }
+        }
+      }
+
+      .actions {
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-evenly;
+
+        button {
+          padding: 10px 25px;
+          border: none;
+          border-radius: 8px;
+          background-color: $mainColor;
+          transition: all 0.2s;
+
+          &:hover {
+            background-color: $secondColor;
+            color: $mainColor;
+          }
+
+          a {
+            text-decoration: none;
+            color: inherit;
+
+            &:hover {
+              background-color: $secondColor;
+              color: $mainColor;
+            }
+          }
+
+          fa-icon {
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+  }
+}

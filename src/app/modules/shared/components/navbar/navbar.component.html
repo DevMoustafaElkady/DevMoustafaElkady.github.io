@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand" routerLink="/">
+      <img src="../../../../../assets/images/icons/small-ev-logo.png" alt="">
+    </a>
+
+    <!-- Toggle navbar -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Menue -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li *ngFor="let tab of tabs" class="nav-item"><a class="nav-link" [routerLink]="tab.navigate" routerLinkActive="active-tab" [routerLinkActiveOptions]="{exact: true}">{{tab.name}}</a></li>
+      </ul>
+    </div>
+
+    <div class="auth-section">
+      <button routerLink="auth/login" class="login"><fa-icon [icon]="login"></fa-icon>Login</button>
+      <button routerLink="auth/register" class="register"><fa-icon [icon]="register"></fa-icon>register</button>
+    </div>
+  </div>
+</nav>

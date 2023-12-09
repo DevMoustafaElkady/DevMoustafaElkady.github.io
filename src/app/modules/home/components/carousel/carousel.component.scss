@@ -1,0 +1,55 @@
+@import '../../../shared/styles/variables';
+.carousel-container {
+  background-image: url("../../../../../assets/images/header.png");
+  background-size: cover;
+  .carousel {
+    height: 600px;
+    background: rgba(0, 0, 0, 0.7);
+
+    .container {
+      height: 100%;
+      .row {
+        height: 100%;
+      }
+    }
+
+    .header-text {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      h1 {
+        color: $mainColor;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        font-weight: bold;
+        font-size: 45px;
+        background: #010002;
+        padding: 10px 30px;
+      }
+
+      p {
+        font-size: 20px;
+        color: $paragraphColor;
+        text-align: center;
+        width: 50%;
+        margin: 30px auto;
+      }
+
+      button {
+        border: none;
+        background: $mainColor;
+        padding: 10px 20px;
+        font-weight: bold;
+        border-radius: 2px;
+        transition: all 0.2s;
+
+        &:hover {
+          background-color: #010002;
+          color: $mainColor;
+        }
+      }
+    }
+  }
+}

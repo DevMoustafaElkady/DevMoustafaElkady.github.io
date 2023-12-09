@@ -1,0 +1,29 @@
+<app-breadcrumbs [crumbsConfig]="crumbsConfig"></app-breadcrumbs>
+<div class="login-container">
+  <div class="container">
+    <div class="content">
+      <div class="login">
+        <form>
+        <div class="input-group">
+          <label for="username">
+            User Name
+            <input class="form-control form-control" name="username" type="text" placeholder="">
+          </label>
+        </div>
+        <div class="input-group">
+          <label for="password">
+            Password
+            <input class="form-control form-control" type="text" name="password" placeholder="">
+          </label>
+        </div>
+        <div class="actions">
+          <button type="submit" class="login"><fa-icon [icon]="login"></fa-icon>Login</button>
+          <span routerLink="/auth/register">Don't have an account?</span>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-loader *ngIf="loader"></app-loader>

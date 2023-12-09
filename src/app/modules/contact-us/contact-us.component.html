@@ -1,0 +1,136 @@
+<app-breadcrumbs [crumbsConfig]="crumbsConfig"></app-breadcrumbs>
+<div class="contact-container">
+  <!-- Head Details -->
+  <div class="container">
+    <div class="details">
+      <div class="row">
+        <div class="col-md-4 item">
+          <fa-icon [icon]="mail"></fa-icon>
+          <span>info@yoursite.com</span>
+        </div>
+        <div class="col-md-4 item">
+          <fa-icon [icon]="phone"></fa-icon>
+          <span>01128509296</span>
+        </div>
+        <div class="col-md-4 item">
+          <fa-icon [icon]="location"></fa-icon>
+          <span>176 W street name, New York, NY 10014</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Map -->
+  <div class="map">
+    <div class="row">
+      <div class="col-md-12">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14390.575235058363!2d32.57120954999999!3d25.6167497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1699214764973!5m2!1sen!2seg"
+          width="100%"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Form -->
+  <div class="content">
+    <div class="contact">
+      <form>
+        <div class="row">
+          <h3>Enter Your Details</h3>
+          <!-- First Name -->
+          <div class="col-md-6">
+            <div class="input-group">
+              <label for="firstName">
+                First Name
+                <input
+                  class="form-control form-control"
+                  name="firstName"
+                  type="text"
+                  placeholder=""
+                />
+              </label>
+            </div>
+          </div>
+
+          <!-- Last Name -->
+          <div class="col-md-6">
+            <div class="input-group">
+              <label for="lastName">
+                Last Name
+                <input
+                  class="form-control form-control"
+                  name="lastName"
+                  type="text"
+                  placeholder=""
+                />
+              </label>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="col-md-6">
+            <div class="input-group">
+              <label for="email">
+                Email
+                <input
+                  class="form-control form-control"
+                  name="email"
+                  type="text"
+                  placeholder=""
+                />
+              </label>
+            </div>
+          </div>
+
+          <!-- Phone Number -->
+          <div class="col-md-6">
+            <div class="input-group">
+              <label for="phoneNumber">
+                Phone Number
+                <input
+                  class="form-control form-control"
+                  name="phoneNumber"
+                  type="text"
+                  placeholder=""
+                />
+              </label>
+            </div>
+          </div>
+
+          <!-- Message -->
+          <div class="col-md-12">
+            <div class="input-group">
+              <label for="password">
+                Message
+                <textarea
+                  rows="5"
+                  cols="50"
+                  class="form-control form-control"
+                  name="message"
+                  placeholder=""
+                ></textarea>
+              </label>
+            </div>
+          </div>
+
+          <!-- Action Button -->
+          <div class="col-md-12">
+            <div class="form-actions">
+              <button type="submit" class="contact">
+                <fa-icon [icon]="send"></fa-icon>Send
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<app-loader *ngIf="loader"></app-loader>

@@ -1,0 +1,51 @@
+@import '../../../shared/styles/variables';
+.navbar{
+  background: $secondColor !important;
+
+  // Logo
+  .navbar-brand{
+  width: 70px;
+
+  img{
+    width: 100%;
+  }
+}
+
+// Links
+.nav-link{
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #fff;
+
+  &:hover{
+    color: $mainColor;
+  }
+}
+.active-tab{
+  color: $mainColor;
+}
+
+// Auth
+.auth-section{
+  button{
+    border: none;
+    padding: 7px 15px;
+    border: 2px solid $mainColor;
+    border-radius: 4px;
+    margin: 0 4px;
+    background-color: transparent;
+
+    fa-icon{
+      margin: 0 3px;
+    }
+  }
+  .login{
+    background-color: $mainColor;
+  }
+
+  .register{
+    color: $mainColor;
+  }
+}
+}

@@ -1,0 +1,43 @@
+@import '../../../shared/styles/variables';
+.crumbs {
+  padding: 40px 0;
+  background-color: $mainColor;
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .title {
+      h2 {
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+
+    .crumbs-list {
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+
+        li {
+          a {
+            text-decoration: none;
+            color: #2d2d2d;
+            text-transform: uppercase;
+            font-weight: bold;
+          }
+          .non-active {
+            color: #7a7878 !important;
+            cursor: auto;
+          }
+          span {
+            margin: 0 3px;
+          }
+        }
+      }
+    }
+  }
+}
